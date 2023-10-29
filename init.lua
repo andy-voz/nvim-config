@@ -12,19 +12,23 @@ vim.g.material_style = "darker"
 vim.cmd 'colorscheme material'
 
 -- BEGIN: Plugins setup
-require('lualine').setup {}
+require('lualine').setup()
 
-require("nvim-tree").setup {}
+require('scrollbar').setup()
+require("scrollbar.handlers.gitsigns").setup()
+require("scrollbar.handlers.diagnostic").setup()
 
-require("project_nvim").setup {}
+require("nvim-tree").setup()
+
+require("project_nvim").setup()
 
 require('telescope').load_extension('media_files')
 require('telescope').load_extension('projects')
 
-require('mason').setup {}
-require('mason-lspconfig').setup {}
+require('mason').setup()
+require('mason-lspconfig').setup()
 
-require('nvim-autopairs').setup {}
+require('nvim-autopairs').setup()
 
 require('gitsigns').setup()
 

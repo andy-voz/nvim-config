@@ -37,8 +37,8 @@ plugins = {
     },
     'nvim-telescope/telescope-media-files.nvim',
     
-    -- Minimap
-    'wfxr/minimap.vim',
+    -- Scrollbar
+    'petertriho/nvim-scrollbar',
 
     -- Tabs
     'nanozuki/tabby.nvim',
