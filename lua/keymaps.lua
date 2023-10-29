@@ -30,6 +30,8 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>fp', ':Telescope projects<CR>', {})
+vim.keymap.set('n', '<leader>fm', ':Telescope media_files<CR>', {})
 
 -- File Tree
 vim.keymap.set('n', '<leader>ft', ':NvimTreeToggle<CR>', {})
@@ -51,5 +53,6 @@ vim.keymap.set('v', '>', '>gv', opts)
 -----------------
 
 vim.keymap.set('t', '<C-n>', '<C-\\><C-N>', opts)
+vim.keymap.set('t', '<ESC>', '<C-\\><C-N>', opts)
 
 
