@@ -18,9 +18,9 @@ require('scrollbar').setup()
 require("scrollbar.handlers.gitsigns").setup()
 require("scrollbar.handlers.diagnostic").setup()
 
-require("nvim-tree").setup()
+require('nvim-tree').setup()
 
-require("project_nvim").setup()
+require('project_nvim').setup()
 
 require('telescope').load_extension('media_files')
 require('telescope').load_extension('projects')
@@ -32,7 +32,9 @@ require('nvim-autopairs').setup()
 
 require('gitsigns').setup()
 
+-- Configs in separate files:
 require('cmp_setup')
+require('lsp_setup')
 require('ts_setup')
 
 local wk = require("which-key")

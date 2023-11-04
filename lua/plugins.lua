@@ -25,23 +25,42 @@ plugins = {
     'nvim-tree/nvim-web-devicons',
 
     -- Terminal
-    {'akinsho/toggleterm.nvim', version = "*", config = true},
-    
+    {
+        'akinsho/toggleterm.nvim',
+        version = "*",
+        config = true
+    },
+
     -- Project
     'ahmedkhalf/project.nvim',
-    
+
     -- Telescope
     {
-    'nvim-telescope/telescope.nvim', tag = '0.1.4',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.4',
+        dependencies = {
+            'nvim-lua/plenary.nvim'
+        }
     },
     'nvim-telescope/telescope-media-files.nvim',
-    
+
     -- Scrollbar
     'petertriho/nvim-scrollbar',
 
     -- Tabs
     'nanozuki/tabby.nvim',
+
+    -- Dashboard
+    {
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
+        config = function()
+            require('dashboard').setup {
+                -- config
+            }
+        end,
+        dependencies = { { 'nvim-tree/nvim-web-devicons' } }
+    },
 
     -- LSP
     'williamboman/mason.nvim',

@@ -48,6 +48,20 @@ vim.keymap.set('n', '<leader>t', ':ToggleTerm<CR>', {})
 vim.keymap.set('v', '<', '<gv', opts)
 vim.keymap.set('v', '>', '>gv', opts)
 
+local range_formatting = function()
+    local start_row, _ = vim.api.nvim_buf_get_mark(0, "<")
+    local end_row, _ = vim.api.nvim_buf_get_mark(0, ">")
+    vim.lsp.buf.format({
+        range = {
+            ["start"] = { start_row, 0 },
+            ["end"] = { end_row, 0 },
+        },
+        async = true,
+    })
+end
+
+vim.keymap.set('v', '<leader>f', range_formatting, { desc = 'Range formatting' })
+
 -----------------
 -- Terminal mode --
 -----------------
