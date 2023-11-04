@@ -66,6 +66,7 @@ local plugins = {
     'williamboman/mason.nvim',
     "williamboman/mason-lspconfig.nvim",
     'neovim/nvim-lspconfig',
+    'VidocqH/lsp-lens.nvim',
 
     -- Flutter dev
     {

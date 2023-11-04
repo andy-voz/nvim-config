@@ -18,12 +18,18 @@ require('scrollbar').setup()
 require("scrollbar.handlers.gitsigns").setup()
 require("scrollbar.handlers.diagnostic").setup()
 
-require('nvim-tree').setup()
+require('nvim-tree').setup {
+    git = {
+        ignore = false,
+    }
+}
 
 require('project_nvim').setup()
 
+local telescope = require('telescope')
 require('telescope').load_extension('media_files')
 require('telescope').load_extension('projects')
+telescope.setup()
 
 require('mason').setup()
 require('mason-lspconfig').setup()
