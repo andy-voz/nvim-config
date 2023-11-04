@@ -48,6 +48,17 @@ plugins = {
     "williamboman/mason-lspconfig.nvim",
     'neovim/nvim-lspconfig',
 
+    -- Flutter dev
+    {
+        'akinsho/flutter-tools.nvim',
+        lazy = false,
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            'stevearc/dressing.nvim', -- optional for vim.ui.select
+        },
+        config = true,
+    },
+
     -- CMP
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-buffer',
