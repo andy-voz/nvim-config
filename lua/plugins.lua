@@ -101,6 +101,17 @@ local plugins = {
     -- git
     'lewis6991/gitsigns.nvim',
 
+    -- Cheatsheet
+    {
+        'sudormrfbin/cheatsheet.nvim',
+
+        requires = {
+            { 'nvim-telescope/telescope.nvim' },
+            { 'nvim-lua/popup.nvim' },
+            { 'nvim-lua/plenary.nvim' },
+        }
+    },
+
     -- which key
     "folke/which-key.nvim",
     event = "VeryLazy",

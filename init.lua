@@ -32,6 +32,8 @@ require('nvim-autopairs').setup()
 
 require('gitsigns').setup()
 
+require('cheatsheet').setup()
+
 -- Configs in separate files:
 require('cmp_setup')
 require('lsp_setup')

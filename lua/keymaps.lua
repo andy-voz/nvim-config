@@ -33,6 +33,9 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fp', ':Telescope projects<CR>', {})
 vim.keymap.set('n', '<leader>fm', ':Telescope media_files<CR>', {})
 
+-- Cheatsheet
+vim.keymap.set('n', '<leader>?', ':Cheatsheet<CR>', {})
+
 -- File Tree
 vim.keymap.set('n', '<leader>ft', ':NvimTreeToggle<CR>', {})
 vim.keymap.set('n', '<leader>ftf', ':NvimTreeFocus<CR>', {})
