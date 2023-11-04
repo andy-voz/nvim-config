@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-plugins = {
+local plugins = {
     -- Themes
     'marko-cerovac/material.nvim',
 
@@ -84,6 +84,13 @@ plugins = {
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
+
+    -- Snippets plugin...without it nvim-cmp won't work correctly.
+    'dcampos/nvim-snippy',
+    'dcampos/cmp-snippy',
+
+    -- Actualual snippets
+    'honza/vim-snippets',
 
     -- Treesitter
     'nvim-treesitter/nvim-treesitter',
