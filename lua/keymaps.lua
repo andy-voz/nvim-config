@@ -46,7 +46,7 @@ vim.keymap.set('n', '<leader>?', ':Cheatsheet<CR>', {})
 
 -- File Tree
 vim.keymap.set('n', '<leader>ft', ':NvimTreeToggle<CR>', {})
-vim.keymap.set('n', '<leader>ftf', ':NvimTreeFocus<CR>', {})
+vim.keymap.set('n', '<leader>ftf', ':NvimTreeFindFile<CR>', {})
 
 -- Terminal
 vim.keymap.set('n', '<leader>t', ':ToggleTerm<CR>', {})
