@@ -33,6 +33,14 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fp', ':Telescope projects<CR>', {})
 vim.keymap.set('n', '<leader>fm', ':Telescope media_files<CR>', {})
 
+-- LSP
+vim.keymap.set('n', '<leader>lf', builtin.lsp_references, { desc = 'Find all references' })
+vim.keymap.set('n', '<leader>lr', vim.lsp.buf.rename, { desc = 'Rename all occurances' })
+vim.keymap.set('n', '<leader>ld', vim.lsp.buf.definition, { desc = 'Go to definition' })
+vim.keymap.set('n', '<leader>li', vim.lsp.buf.implementation, { desc = 'Find implementation' })
+vim.keymap.set('n', '<leader>la', vim.lsp.buf.code_action, { desc = 'List code actions' })
+vim.keymap.set('n', '<leader>lh', vim.lsp.buf.hover, { desc = 'Show information' })
+
 -- Cheatsheet
 vim.keymap.set('n', '<leader>?', ':Cheatsheet<CR>', {})
 
