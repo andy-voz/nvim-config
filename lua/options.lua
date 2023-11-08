@@ -27,9 +27,10 @@ vim.opt.smartcase = true            -- but make it case sensitive if an uppercas
 
 vim.opt.timeoutlen = 500
 
--- Minimap
+-- Spell
 
-vim.g.minimap_width = 10
-vim.g.minimap_auto_start = 0
-vim.g.minimap_auto_start_win_enter = 0
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
 
+-- Mouse
+vim.opt.mousemodel = 'popup_setpos'
