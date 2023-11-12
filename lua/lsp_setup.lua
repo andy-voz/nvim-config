@@ -10,3 +10,6 @@ lspconfig.clangd.setup {
 lspconfig.lua_ls.setup {
     capabilities = capabilities
 }
+lspconfig.omnisharp.setup {
+    capabilities = capabilities
+}
