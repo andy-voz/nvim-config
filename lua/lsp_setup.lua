@@ -13,3 +13,6 @@ lspconfig.lua_ls.setup {
 lspconfig.omnisharp.setup {
     capabilities = capabilities
 }
+lspconfig.spectral.setup {
+    capabilities = capabilities
+}
