@@ -16,3 +16,6 @@ lspconfig.omnisharp.setup {
 lspconfig.spectral.setup {
     capabilities = capabilities
 }
+lspconfig.pylsp.setup {
+    capabilities = capabilities
+}
