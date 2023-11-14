@@ -14,6 +14,10 @@ vim.cmd 'colorscheme material'
 -- BEGIN: Plugins setup
 require('lualine').setup()
 
+require('dashboard').setup()
+
+require('auto-save').setup()
+
 require('scrollbar').setup()
 require("scrollbar.handlers.gitsigns").setup()
 require("scrollbar.handlers.diagnostic").setup()

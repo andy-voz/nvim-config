@@ -44,21 +44,19 @@ local plugins = {
     },
     'nvim-telescope/telescope-media-files.nvim',
 
-    -- Scrollbar
+    -- Scroll Bar
     'petertriho/nvim-scrollbar',
 
     -- Tabs
     'nanozuki/tabby.nvim',
 
+    -- Auto save
+    "Pocco81/auto-save.nvim",
+
     -- Dashboard
     {
         'nvimdev/dashboard-nvim',
         event = 'VimEnter',
-        config = function()
-            require('dashboard').setup {
-                -- config
-            }
-        end,
         dependencies = { { 'nvim-tree/nvim-web-devicons' } }
     },
 
