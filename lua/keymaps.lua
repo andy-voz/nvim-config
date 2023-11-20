@@ -41,6 +41,15 @@ vim.keymap.set('n', '<leader>li', vim.lsp.buf.implementation, { desc = 'Find imp
 vim.keymap.set('n', '<leader>la', vim.lsp.buf.code_action, { desc = 'List code actions' })
 vim.keymap.set('n', '<leader>lh', vim.lsp.buf.hover, { desc = 'Show information' })
 
+-- Debug
+local dap = require 'dap'
+vim.keymap.set('n', '<leader>db', dap.toggle_breakpoint, { desc = 'Toggle breakpoint' })
+vim.keymap.set('n', '<leader>dc', dap.continue, { desc = 'Continue execution' })
+vim.keymap.set('n', '<leader>di', dap.step_into, { desc = 'Step into' })
+vim.keymap.set('n', '<leader>do', dap.step_over, { desc = 'Step over' })
+vim.keymap.set('n', '<leader>dr', dap.repl.open, { desc = 'Open repl' })
+vim.keymap.set('n', '<leader>dt', require('dapui').toggle, { desc = 'Toggle UI' })
+
 -- Cheatsheet
 vim.keymap.set('n', '<leader>?', ':Cheatsheet<CR>', {})
 

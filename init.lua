@@ -35,6 +35,8 @@ require('telescope').load_extension('media_files')
 require('telescope').load_extension('projects')
 telescope.setup()
 
+require('dapui').setup()
+
 require('mason').setup()
 require('mason-lspconfig').setup()
 
@@ -48,6 +50,7 @@ require('cheatsheet').setup()
 require('cmp_setup')
 require('lsp_setup')
 require('ts_setup')
+require('dap_setup')
 
 local wk = require("which-key")
 

@@ -66,6 +66,10 @@ local plugins = {
     'neovim/nvim-lspconfig',
     'VidocqH/lsp-lens.nvim',
 
+    -- Debug
+    'mfussenegger/nvim-dap',
+    'rcarriga/nvim-dap-ui',
+
     -- Flutter dev
     {
         'akinsho/flutter-tools.nvim',
