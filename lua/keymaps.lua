@@ -40,6 +40,8 @@ vim.keymap.set('n', '<leader>ld', vim.lsp.buf.definition, { desc = 'Go to defini
 vim.keymap.set('n', '<leader>li', vim.lsp.buf.implementation, { desc = 'Find implementation' })
 vim.keymap.set('n', '<leader>la', vim.lsp.buf.code_action, { desc = 'List code actions' })
 vim.keymap.set('n', '<leader>lh', vim.lsp.buf.hover, { desc = 'Show information' })
+-- cpp specific:
+vim.keymap.set('n', '<leader>ls', ':ClangdSwitchSourceHeader<CR>', { desc = '(Clangd) Switch header/source' })
 
 -- Debug
 local dap = require 'dap'
