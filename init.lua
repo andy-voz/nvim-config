@@ -18,7 +18,8 @@ vim.opt.mouse = "a"
 
 -- Detect the platform and set the appropriate path
 local config_path = vim.fn.stdpath("config") .. "/init.lua"
-
 -- Reload config
 vim.keymap.set("n", "<leader>r", ":luafile " .. config_path .. "<CR>", { silent = true })
 
+-- Lazy plugins manager setup
+require('config.lazy')
