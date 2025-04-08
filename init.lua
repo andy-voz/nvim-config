@@ -24,6 +24,6 @@ vim.keymap.set("n", "<leader>r", ":luafile " .. config_path .. "<CR>", { silent 
 -- Lazy plugins manager setup
 require('config.lazy')
 
-require('config.setup')
-
 vim.cmd("colorscheme kanagawa")
+
+require('config.setup')

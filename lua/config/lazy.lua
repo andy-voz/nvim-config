@@ -20,7 +20,8 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins" },
-    "nvim-tree/nvim-tree.lua"
+    "nvim-tree/nvim-tree.lua",
+    "neovim/nvim-lspconfig"
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
