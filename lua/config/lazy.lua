@@ -21,7 +21,8 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins" },
     "nvim-tree/nvim-tree.lua",
-    "neovim/nvim-lspconfig"
+    "neovim/nvim-lspconfig",
+    { "nvim-tree/nvim-web-devicons", opts = {} },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.

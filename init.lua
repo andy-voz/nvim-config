@@ -27,3 +27,6 @@ require('config.lazy')
 vim.cmd("colorscheme kanagawa")
 
 require('config.setup')
+require('config.telescope')
+require('config.lsp')
+require ('config.nvim-tree')
