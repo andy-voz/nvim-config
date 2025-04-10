@@ -23,6 +23,13 @@ require("lazy").setup({
     "nvim-tree/nvim-tree.lua",
     "neovim/nvim-lspconfig",
     { "nvim-tree/nvim-web-devicons", opts = {} },
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        config = function()
+          require("which-key").setup()
+        end,
+      }
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
