@@ -1,6 +1,10 @@
 return {
-  'nvim-telescope/telescope.nvim', tag = '0.1.5',
-  dependencies = { 'nvim-lua/plenary.nvim', "ahmedkhalf/project.nvim" },
+  "nvim-telescope/telescope.nvim",
+  tag = "0.1.5",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "ahmedkhalf/project.nvim", -- needed here to make sure it's loaded before telescope's config
+  },
   config = function()
     require("telescope").load_extension("projects")
   end,

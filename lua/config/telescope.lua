@@ -1,8 +1,36 @@
 local map = vim.keymap.set
-local opts = { noremap = true, silent = true }
 
-local telescope = require("telescope.builtin")
-map("n", "<leader>ff", telescope.find_files, opts)
-map("n", "<leader>fg", telescope.live_grep, opts)
-map("n", "<leader>fb", telescope.buffers, opts)
-map("n", "<leader>fh", telescope.help_tags, opts)
+local builtin = require("telescope.builtin")
+local telescope = require("telescope")
+
+map("n", "<leader>ff", builtin.find_files, { 
+    noremap = true, 
+    silent = true, 
+    desc = "Find files" 
+})
+
+map("n", "<leader>fg", builtin.live_grep, {
+    noremap = true,
+    silent = true,
+    desc = "Live Grep"
+})
+
+map("n", "<leader>fb", builtin.buffers, {
+    noremap = true,
+    silent = true,
+    desc = "List Buffers"
+})
+
+map("n", "<leader>fh", builtin.help_tags, {
+    noremap = true,
+    silent = true,
+    desc = "Help tags"
+})
+
+map("n", "<leader>fp", function()
+  require("telescope").extensions.projects.projects()
+end, { 
+    noremap = true, 
+    silent = true, 
+    desc = "Projects" 
+})
