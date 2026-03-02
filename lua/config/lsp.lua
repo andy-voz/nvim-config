@@ -1,4 +1,4 @@
-require("lspconfig").clangd.setup({
+vim.lsp.config('clangd', {
   on_attach = function(_, bufnr)
     local bufopts = { noremap = true, silent = true, buffer = bufnr }
 
@@ -13,3 +13,4 @@ require("lspconfig").clangd.setup({
     map("n", "<leader>sh", "<cmd>ClangdSwitchSourceHeader<CR>", bufopts)
   end,
 })
+vim.lsp.enable('clangd')
