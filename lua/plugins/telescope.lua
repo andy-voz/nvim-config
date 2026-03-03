@@ -1,6 +1,6 @@
 return {
   "nvim-telescope/telescope.nvim",
-  tag = "0.1.5",
+  tag = "v0.2.1",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "ahmedkhalf/project.nvim", -- needed here to make sure it's loaded before telescope's config
