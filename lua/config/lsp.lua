@@ -1,6 +1,7 @@
 vim.lsp.config('clangd', {
   on_attach = function(_, bufnr)
     local bufopts = { noremap = true, silent = true, buffer = bufnr }
+    local map = vim.keymap.set 
 
     map("n", "gd", vim.lsp.buf.definition, bufopts)
     map("n", "gr", vim.lsp.buf.references, bufopts)
